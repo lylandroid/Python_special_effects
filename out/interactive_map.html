@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_bbdbde84ed729002015f1355fe5a1950 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_bbdbde84ed729002015f1355fe5a1950" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_bbdbde84ed729002015f1355fe5a1950 = L.map(
+                "map_bbdbde84ed729002015f1355fe5a1950",
+                {
+                    center: [39.9042, 116.4074],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 10,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_da526b88686fcc6a028c66fd793b5b96 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_da526b88686fcc6a028c66fd793b5b96.addTo(map_bbdbde84ed729002015f1355fe5a1950);
+        
+    
+            var marker_bf8521e294b24f5ea0be1a0a447410ed = L.marker(
+                [39.9042, 116.4074],
+                {
+}
+            ).addTo(map_bbdbde84ed729002015f1355fe5a1950);
+        
+    
+            var icon_80d93ef7a0592dad0b2070b850320c71 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_807b9fd46043191444530149bd5517e5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b5d3047b1b1345152c8215011fb809a3 = $(`<div id="html_b5d3047b1b1345152c8215011fb809a3" style="width: 100.0%; height: 100.0%;">中国北京的天安门广场，历史文化中心！</div>`)[0];
+                popup_807b9fd46043191444530149bd5517e5.setContent(html_b5d3047b1b1345152c8215011fb809a3);
+            
+        
+
+        marker_bf8521e294b24f5ea0be1a0a447410ed.bindPopup(popup_807b9fd46043191444530149bd5517e5)
+        ;
+
+        
+    
+    
+            marker_bf8521e294b24f5ea0be1a0a447410ed.bindTooltip(
+                `<div>
+                     天安门
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_bf8521e294b24f5ea0be1a0a447410ed.setIcon(icon_80d93ef7a0592dad0b2070b850320c71);
+            
+    
+            var marker_49628c2b818613aae48e6ab62934b1a3 = L.marker(
+                [39.9163, 116.3972],
+                {
+}
+            ).addTo(map_bbdbde84ed729002015f1355fe5a1950);
+        
+    
+            var icon_3dc6598b6bdf96bc8e04ae1d4a7ddb57 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_30651b5f38a8b5f915dd7334ffe2a61b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_063af18167ce4737513ace674226167e = $(`<div id="html_063af18167ce4737513ace674226167e" style="width: 100.0%; height: 100.0%;">故宫博物院，古代皇宫，文物宝库！</div>`)[0];
+                popup_30651b5f38a8b5f915dd7334ffe2a61b.setContent(html_063af18167ce4737513ace674226167e);
+            
+        
+
+        marker_49628c2b818613aae48e6ab62934b1a3.bindPopup(popup_30651b5f38a8b5f915dd7334ffe2a61b)
+        ;
+
+        
+    
+    
+            marker_49628c2b818613aae48e6ab62934b1a3.bindTooltip(
+                `<div>
+                     故宫
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_49628c2b818613aae48e6ab62934b1a3.setIcon(icon_3dc6598b6bdf96bc8e04ae1d4a7ddb57);
+            
+    
+            var marker_e1368b7daa565487fd8aecb15833f295 = L.marker(
+                [40.4319, 116.5704],
+                {
+}
+            ).addTo(map_bbdbde84ed729002015f1355fe5a1950);
+        
+    
+            var icon_e4b94b79374ab3c035a6b9dbe02ca79c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a8cfe8da5f5ed37a76ff07428bc0996a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_20ce0eb27938d0e865d05e270c651327 = $(`<div id="html_20ce0eb27938d0e865d05e270c651327" style="width: 100.0%; height: 100.0%;">八达岭长城，世界文化遗产！</div>`)[0];
+                popup_a8cfe8da5f5ed37a76ff07428bc0996a.setContent(html_20ce0eb27938d0e865d05e270c651327);
+            
+        
+
+        marker_e1368b7daa565487fd8aecb15833f295.bindPopup(popup_a8cfe8da5f5ed37a76ff07428bc0996a)
+        ;
+
+        
+    
+    
+            marker_e1368b7daa565487fd8aecb15833f295.bindTooltip(
+                `<div>
+                     长城
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_e1368b7daa565487fd8aecb15833f295.setIcon(icon_e4b94b79374ab3c035a6b9dbe02ca79c);
+            
+    
+            var tile_layer_32f1e36635c2e020f7150a80d6eae1fa = L.tileLayer(
+                "Stamen Terrain",
+                {
+  "minZoom": 0,
+  "maxZoom": 18,
+  "maxNativeZoom": 18,
+  "noWrap": false,
+  "attribution": "Map tiles by Stamen Design, under CC BY 3.0. Data by OpenStreetMap, under ODbL.",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_32f1e36635c2e020f7150a80d6eae1fa.addTo(map_bbdbde84ed729002015f1355fe5a1950);
+        
+    
+            var layer_control_65879fd6f7abed675cd3edf7dfbb6afe_layers = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_da526b88686fcc6a028c66fd793b5b96,
+                    "\u5730\u5f62\u56fe" : tile_layer_32f1e36635c2e020f7150a80d6eae1fa,
+                },
+                overlays :  {
+                },
+            };
+            let layer_control_65879fd6f7abed675cd3edf7dfbb6afe = L.control.layers(
+                layer_control_65879fd6f7abed675cd3edf7dfbb6afe_layers.base_layers,
+                layer_control_65879fd6f7abed675cd3edf7dfbb6afe_layers.overlays,
+                {
+  "position": "topright",
+  "collapsed": true,
+  "autoZIndex": true,
+}
+            ).addTo(map_bbdbde84ed729002015f1355fe5a1950);
+
+        
+</script>
+</html>
